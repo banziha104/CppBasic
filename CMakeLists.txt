@@ -3,4 +3,4 @@ project(CppBasic)
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_executable(CppBasic main.cpp)
+add_executable(CppBasic main.cpp variable.cpp Markdown/variable.h)

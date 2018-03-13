@@ -14,13 +14,58 @@
 
 # 표준 입출력 
 
-- cout , << 
+- cout : 표준 출력 스트림
+- << : 끼워넣기 연산자 
 
 ```cpp
 #include <iostream>
 
 int main() {
     std::cout << "Hello, World!" << std::endl;
+    return 0;
+}
+```
+
+- cin : 표준 입력 스트림 객체
+- \>> : 뽑아내기 연산자, 콘솔로부터 키보드를 입력받아 변수에 데이터를 넣을 수 있다.
+
+```cpp
+#include <iostream>
+
+using namespace std;
+int main() {
+    char name[256];
+    cin >> name;
+
+    cout << "Hello!" << name <<endl;
+    
+    return 0;
+}
+```
+
+<br>
+
+---
+
+# 전처리기 지시문
+
+> 전처리기에 대한 문의 모임
+
+- #include : 라이브러리를 가져오는 지시문
+- #define : 매크로를 정의하는 지시문
+
+```cpp
+#include <iostream>
+#define MULTIPLY(x,y) x*y
+
+using namespace std;
+
+int main() {
+    char name[256];
+    cin >> name;
+
+    cout << "Hello!" << name << MULTIPLY(1,3) << endl;
+
     return 0;
 }
 ```
