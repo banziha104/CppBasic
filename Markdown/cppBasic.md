@@ -69,3 +69,5 @@ int main() {
     return 0;
 }
 ```
+
+- #ifdef ~ #else ~ #endif : 전처리기 조건부 컴파일링
