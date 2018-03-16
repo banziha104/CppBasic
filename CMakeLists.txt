@@ -3,4 +3,4 @@ project(CppBasic)
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_executable(CppBasic main.cpp variable.cpp variable.h)
+add_executable(CppBasic variable.cpp variable.h)

@@ -38,3 +38,33 @@ int main() {
 - 포인트 : 메모리 영역의 주소를 대응시키는 체계
 - 클래스 : 하나 이상의 타입을 모아놓은 집합 타입
 - typedef : 타입 정의 방법
+- const : 변수를 상수화 한다. 대입이 불가능함
+
+```cpp
+//
+// Created by 이영준 on 2018. 3. 13..
+//
+
+#include <iostream>
+
+using namespace std;
+
+int main(){
+    int a = 20;
+    int * const cpp = &a;
+    const int *cpp2;
+    cpp2 = &a;
+
+    cout << &a << "/" << a << "/" << cpp2 << "/" << *cpp2 << "/" << cpp<< "/"  << *cpp << endl;
+}
+```
+
+- auto : 자동 변수 지정자로 함수 안에서 정의되는 변수이며 함수 호출 시 생성되고 함수 반환시에 사라지는 변수
+    - c++0x 버전의 auto : 커파일 타임에 자동으로 적절한타입으로 추론되는 키워드
+    - 초기화 필요
+    - 초기화 값이 참조 타입일지라도 일반 타입으로 추론됌
+    
+```cpp
+auto a = 1; // auto -> int 
+
+```
