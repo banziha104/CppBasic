@@ -7,7 +7,9 @@
 using namespace std;
 
 int main(){
-    int a = 20;
+    int a;
+    int *p = &a;
+    *p = 3;
     int * const cpp = &a;
     const int *cpp2;
     cpp2 = &a;
